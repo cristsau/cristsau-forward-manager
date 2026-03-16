@@ -4,9 +4,24 @@
 
 一个面向 `realm` 转发场景的 Bash 管理脚本项目，提供菜单和 CLI 双入口。
 
+## Quick Start
+
+直接运行，不落地安装：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/cristsau/cristsau-forward-manager/main/scripts/cristsau-realm-pro.sh)
+```
+
+安装为系统命令 `cristsau`：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/cristsau/cristsau-forward-manager/main/install.sh)
+```
+
 ## Current Script
 
 - `scripts/cristsau-realm-pro.sh`
+- `install.sh`
 
 ## Included Features
 
@@ -22,3 +37,4 @@
 
 - 当前主转发引擎是 `realm`
 - 这版重点修过状态文件解析安全、配置预校验、IPv6 地址渲染和依赖按需检查
+- 如果通过 Git 克隆后想直接 `./脚本名` 运行，请确保脚本带有可执行权限
